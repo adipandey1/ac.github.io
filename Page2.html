@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Dinner</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2/dist/index.umd.js"></script>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            color: #ff4d6d;
+            background: linear-gradient(135deg, #ffe6e9, #ffb3c1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #fireworks-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .option:hover {
+            transform: scale(1.05);
+        }
+
+        .option img {
+            width: 90px;
+            height: 90px;
+            border-radius: 10px;
+        }
+
+        .option button {
+            background: #ff4d6d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+
+        .option button:hover {
+            background: #e03e5b;
+        }
+    </style>
+</head>
+<body>
+    <div id="fireworks-container"></div>
+
+    <div class="container">
+        <h1>YAY, Thanks for being my Valentine! Where do you want to eat on Feb 14th, Cutie? 💖</h1>
+        <div class="options">
+            <div class="option" onclick="window.location.href='page3.html'">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipMkNzEMXpxs7HDE8fPAgJvBFwDwCUhIsvyQeL9i=s1360-w1360-h1020" alt="Steak">
+                <button>Steak Dinner</button>
+            </div>
+            <div class="option" onclick="window.location.href='page3.html'">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/44/2e/1d/food-image.jpg?w=900&h=500&s=1" alt="Hot Pot">
+                <button>Hot Pot (Happy Lamb)</button>
+            </div>
+            <div class="option" onclick="window.location.href='page3.html'">
+                <img src="https://www.chuys.com/assets/transforms/general/3866/Our-Story-Bringing-Tex-Mex-Restaurant-Exterior_6c0c164bd2b597ee32b68b8b5755bd2e.jpg" alt="Chuy's">
+                <button>Chuy's</button>
+            </div>
+            <div class="option" onclick="window.location.href='page3.html'">
+                <img src="https://www.creativefabrica.com/wp-content/uploads/2022/10/02/Your-Choice-Stamp-Graphics-39802804-4-580x363.jpg" alt="Your Choice">
+                <button>Your Choice!</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const container = document.getElementById('fireworks-container');
+        const fireworks = new Fireworks.default(container, {  
+            autoresize: true,
+            opacity: 0.5,
+            acceleration: 1.05,
+            friction: 0.97,
+            gravity: 1.5,
+            particles: 100,
+            traceLength: 3,
+            traceSpeed: 5,
+            explosion: 10,
+            intensity: 30,
+            flickering: 50,
+            lineStyle: 'round',
+            hue: {
+                min: 0,
+                max: 360
+            },
+            delay: {
+                min: 30,
+                max: 60
+            },
+            rocketsPoint: {
+                min: 50,
+                max: 50
+            }
+        });
+        fireworks.start();
+    </script>
+</body>
+</html>

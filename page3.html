@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Dessert</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            color: #ff4d6d;
+            background: linear-gradient(135deg, #ffe6e9, #ffb3c1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .option:hover {
+            transform: scale(1.05);
+        }
+
+        .option img {
+            width: 90px;
+            height: 90px;
+            border-radius: 10px;
+        }
+
+        .option button {
+            background: #ff4d6d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+
+        .option button:hover {
+            background: #e03e5b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>What do you want for dessert? 🍨</h1>
+        <div class="options">
+            <div class="option" onclick="window.location.href='page4.html'">
+                <img src="https://cld.accentuate.io/556497273038/1649776192265/Jenis_Chicago_Southport.jpg?v=1650026369445&options=w_1500" alt="Ice Cream">
+                <button>Ice Cream</button>
+            </div>
+            <div class="option" onclick="window.location.href='page4.html'">
+                <img src="https://goldbelly.imgix.net/uploads/showcase_media_asset/image/90288/brownie-squares.31642622846034a945c907dfe847843a.jpg?ixlib=react-9.9.0&ar=1%3A1&fit=crop&w=3840&auto=format" alt="Brownie">
+                <button>Brownie</button>
+            </div>
+            <div class="option" onclick="window.location.href='page4.html'">
+                <img src="https://www.simplyrecipes.com/thmb/H3j9svznweYmxrfrfAW34jG280Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Copycat-Subway-Chocolate-Chip-Cookies--8-a40444af559346edb461ff762eb7dabc.jpg" alt="Cookies">
+                <button>Cookies</button>
+            </div>
+            <div class="option" onclick="window.location.href='page4.html'">
+                <img src="https://geoffreywebb.files.wordpress.com/2011/06/surprise.jpeg" alt="Surprise Me">
+                <button>Surprise Me!</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

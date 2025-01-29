@@ -1,0 +1,49 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f2; /* Cream pink */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #ff6699; /* Pink text */
+}
+
+p {
+    color: #ff6699;
+}
+
+.images img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.buttons, .options {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #ff99cc; /* Pink button */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff6699; /* Darker pink on hover */
+}
